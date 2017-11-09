@@ -126,7 +126,7 @@ function safe_unmount {
 
 function safe_remove {
 	if [ -d $1 ]; then 
-		rm -rf $1
+		rmdir $1
 		return $?		
 	fi
 
