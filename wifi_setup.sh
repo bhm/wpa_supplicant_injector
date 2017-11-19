@@ -5,7 +5,7 @@ EMPTY=""
 EXPECTED_MIME_TYPE="application/octet-stream"
 SSID_EMPTY_THRESHOLD_TO_EXIT=2
 
-MOUNT_POINT="temporary_raspbian_mount_point"
+MOUNT_POINT=$(mktemp -d)
 WPA_SUPPLICANT_CONF="$MOUNT_POINT/etc/wpa_supplicant/wpa_supplicant.conf"
 WPA_SUPPLICANT_CONF_BACKUP="$WPA_SUPPLICANT_CONF.bak"
 
